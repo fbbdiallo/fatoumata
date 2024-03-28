@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Future ingénieur en informatique. Fatoumata Binta">
+    <title>Site de Fatoumata</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo23.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Accueil</a></li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#portfolio">Projets</a></li>
+                    <li><a href="#contact">Me contacter</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Passionée d'informatique</p>
+                <h1>Salut, Je suis <br> <span>Fatoumata Binta </span>Diallo</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo_fbb.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">A Propos de Moi</h1>
+                    <p>J'ai toujours eu un interêt pour l'informatique et les nouvelles technologies. 
+                        Mais le cursus academique que j'ai suivi j'usqu'ici est loin de ce domaine. Je suis en pleine reconversion professionnelle.
+                        Ayant déjà suivi quelques formation en ligne en autodidacte, j'ai aujourd'hui une bonne base sur quelques technos du web (HTML, CSS et JavaScript) et je souhaite intégrer une formation 
+                        pour approfondir et élargir mes connaissances. Mon objectif final est de devenir ingénieur logiciel.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Compétences</p>
+                        <p class="tab-links" onclick="opentab('education')">Formations</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web</span><br>Le langage de balisage HTML5</li>
+                            <li><span>Web</span><br>Le langage CSS3</li>
+                            <li><span>Web</span><br>Le langage JavaScript</li>
+                            <li><span>Alogrithme</span><br>Quelques bases en algorithmique</li>
+                            <li><span>Outils</span><br>L'éditeur de code VScode</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Réorientation en informatique</li>
+                            <li><span>2023</span><br>Première année en école d'infirmière</li>
+                            <li><span>2020</span><br>Licence en Technique de laboratoire Biomédical</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mes Projets</h1>
+            <div class="work-list">
+                <div class="work">
+                    <h3 class="work-title">Blackjack</h3>
+                    <img src="images/black-jack1.JPG">
+                    <div class="layer">
+                        <h3>Blackjack</h3>
+                        <p>J'ai developpé le jeu Blackjack en HTML, CSS et JavaScript.
+                        </p>
+                        <div class="actions">
+                            <a href="#">Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#">Code <i class="fas fa-code"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <h3 class="work-title">Puissance 4</h3>
+                    <img src="images/Puissance4.png">
+                    <div class="layer">
+                        <h3>Puissance 4</h3>
+                        <p>Il s'git de jouer au jeu "puissance" sur un navigateur.
+                        </p>
+                        <div class="actions">
+                            <a href="#">Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#">Code <i class="fas fa-code"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Voir plus</a>
+        </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Me Contacter</h1>
+                    <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 074552******</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="docs/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Fatoumata Made with <i class="fas fa-heart"></i> by <a
+                    href="/">Fatoumata</a></p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+    
+    <script>
+    
+        var sidemeu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    
+    </script>
+</body>
+
+</html>
